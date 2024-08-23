@@ -1,0 +1,13 @@
+<div class="onboarding">
+  <img
+    class="onboarding__imagem"
+    src="{{imagemCapa}}" alt="Menin e o Progessor">
+  <h2
+    class="onboarding__titulo"
+    >{{titulo}}</h2>
+  <p
+    class="onboarding__paragrafo"
+  >{{paragrafo}}</p>
+  <app-pagination></app-pagination>
+  <app-button [buttonText]="'Continuar'" (clicked)="navegar('www.google.com')"></app-button>
+</div>

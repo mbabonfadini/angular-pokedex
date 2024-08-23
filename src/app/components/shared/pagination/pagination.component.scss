@@ -1,0 +1,23 @@
+.paginacao {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+
+
+  &__pagina {
+    width: 9px;
+    height: 9px;
+    border-radius: 2rem;
+    background-color: #4565b726;
+
+    };
+
+  &__ativo{
+
+      width: 28px;
+      height: 9px;
+      border-radius: 2rem;
+      background-color: #173EA5;
+
+  };
+}
