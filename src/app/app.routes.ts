@@ -1,17 +1,14 @@
-import { Routes, RouterModule } from '@angular/router';
-import { OnBoardingFComponent } from './components/on-boarding-f/on-boarding-f.component';
-import { OnboardComponent } from './views/onboard/onboard.component';
-import { OnBoardingSComponent } from './components/on-boarding-s/on-boarding-s.component';
-
-
+import { Routes } from '@angular/router';
+import { OnboardFComponent } from './views/onboard-f/onboard-f.component';
+import { OnboardSComponent } from './views/onboard-s/onboard-s.component';
+import { PgInicialAcessoComponent } from './views/pg-inicial-acesso/pg-inicial-acesso.component';
 
 export const routes: Routes = [
-    {
-      path:'', component: OnboardComponent, pathMatch:'full',
-    },
-    {
-      path:'onboarding', component: OnboardComponent, pathMatch:'full',
-      },
-      {path:'primeiro', component: OnBoardingFComponent, pathMatch:'full'},
-      {path:'segundo', component: OnBoardingSComponent, pathMatch:'full'}
+  {
+    path: '',
+    component: OnboardFComponent,
+    pathMatch: 'full',
+  },
+  { path: 's', component: OnboardSComponent },
+  { path: 'pagina-de-acesso', component: PgInicialAcessoComponent },
 ];
