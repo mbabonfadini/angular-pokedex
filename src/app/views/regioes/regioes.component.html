@@ -1,0 +1,9 @@
+<section class="regioes">
+  <h2 class="regioes__titulo">Regiões</h2>
+  <ul class="regioes__descricao">
+    <li *ngFor="let r of regioes">
+      <app-capa-regioes [backgroundImage]="r.getCapa()" [titleRegion]="r.title" [geracionRegion]="r.id"></app-capa-regioes>
+    </li>
+  </ul>
+
+</section>
